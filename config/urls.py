@@ -18,6 +18,7 @@ urlpatterns = [
 
     # Your stuff: custom urls includes go here
 
+    url(r'^timetable/', include('schedule.timetable.urls', namespace='timetable')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

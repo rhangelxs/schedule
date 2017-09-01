@@ -49,6 +49,7 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
+
 ]
 
 # Apps specific for this project go here.
@@ -56,6 +57,7 @@ LOCAL_APPS = [
     # custom users app
     'schedule.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+    'schedule.timetable',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -63,7 +65,7 @@ INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 # MIDDLEWARE CONFIGURATION
 # ------------------------------------------------------------------------------
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,7 +122,7 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
 # although not all choices may be available on all operating systems.
 # In a Windows environment this must be set to your system time zone.
-TIME_ZONE = 'Moscow'
+TIME_ZONE = 'Europe/Moscow'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
 LANGUAGE_CODE = 'en-us'
@@ -135,7 +137,7 @@ USE_I18N = True
 USE_L10N = True
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#use-tz
-USE_TZ = True
+USE_TZ = False
 
 # TEMPLATE CONFIGURATION
 # ------------------------------------------------------------------------------

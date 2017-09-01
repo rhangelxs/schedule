@@ -49,3 +49,4 @@ redis>=2.10.5
 
 
 # Your custom requirements go here
+# git+https://github.com/dmarcelino/django-bootstrap-datepicker.git@98e0d8125cde544bbe840251644e74e71372e8f3#egg=django-bootstrap-datepicker
