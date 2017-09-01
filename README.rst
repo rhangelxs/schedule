@@ -74,4 +74,19 @@ See detailed `cookiecutter-django Docker documentation`_.
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
 
 
+Clone repo:
+::
 
+  $ git clone https://github.com/rhangelxs/schedule
+
+
+Run:
+::
+
+ $ docker-compose -f local.yml up
+
+
+Run tests:
+::
+
+ $ docker-compose -f local.yml run --rm django ./manage.py test -v2
